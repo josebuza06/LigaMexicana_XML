@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resultados [
+        <!ELEMENT resultados (Fecha, Partido)>
+        <!ELEMENT Partido (EquipoLocal, EquipoVisitante, Marcador, GolesLocal)>
+        <!ELEMENT Fecha (#PCDATA)>
+        <!ELEMENT EquipoLocal (#PCDATA)>
+        <!ELEMENT EquipoVisitante (#PCDATA)>
+        <!ELEMENT Marcador (#PCDATA)>
+        <!ELEMENT GolesLocal (Jugador, Minuto)>
+        <!ELEMENT Jugador (#PCDATA)>
+        <!ELEMENT Minuto (#PCDATA)>
+        <!ELEMENT Gol (#PCDATA)>
+        <!ATTLIST Gol
+                Jugador CDATA #REQUIRED>
+        <!ATTLIST Gol
+                Minuto CDATA #REQUIRED>
+        ]>
+
+<resultados>
+    <Fecha>2023-03-21</Fecha>
+    <Partido>
+        <EquipoLocal>Chivas</EquipoLocal>
+        <EquipoVisitante>Cruz azul</EquipoVisitante>
+        <Marcador>1-0</Marcador>
+        <GolesLocal>
+            <Jugador>Alexis Vega</Jugador>
+            <Minuto>80</Minuto>
+        </GolesLocal>
+    </Partido>
+</resultados>
+
